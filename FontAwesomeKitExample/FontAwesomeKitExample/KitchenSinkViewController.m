@@ -76,6 +76,7 @@
     NSMutableAttributedString *twitterMas = [[twitterIcon attributedString] mutableCopy];
     [twitterMas appendAttributedString:[[NSAttributedString alloc] initWithString:@"  @PrideChung" attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}]];
     
+//    <ion-icon name="logo-octocat"></ion-icon>
     FAKFontAwesome *githubIcon = [FAKFontAwesome githubAltIconWithSize:20];
     [githubIcon addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor]];
     NSMutableAttributedString *githubMas = [[githubIcon attributedString] mutableCopy];

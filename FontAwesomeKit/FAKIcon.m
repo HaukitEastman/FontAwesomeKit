@@ -70,7 +70,13 @@
 
 - (NSString *)iconName
 {
-    return [[self class] allIcons][[self characterCode]];
+    NSDictionary *allIcons = [[self class] allIcons];
+    for (NSString *iconKey in allIcons.allKeys) {
+        if ([allIcons[iconKey] isEqualToString:[self characterCode]]) {
+            return iconKey;
+        }
+    }
+//    return [[self class] allIcons][[self characterCode]];
 }
 
 - (CGFloat)iconFontSize

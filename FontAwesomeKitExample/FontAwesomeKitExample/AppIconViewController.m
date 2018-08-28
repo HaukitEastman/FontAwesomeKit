@@ -49,7 +49,12 @@
         appstoreIcon.drawingPositionAdjustment = UIOffsetMake(0, -2);
         appstoreIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"appstore-gradient"]];
         [appstoreIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
-
+        
+//        FAKIonIcons *addIcon = [FAKIonIcons cameraIconWithSize:48];
+////        cameraIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"camera-gradient"]];
+//        [cameraIcon addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithWhite:0.1 alpha:1.0]];
+        
+//add-circle-outline
         _appIcons = @[mailIcon, musicIcon, phoneIcon, facetimeIcon, messageIcon, cameraIcon, appstoreIcon];
     }
     return _appIcons;
